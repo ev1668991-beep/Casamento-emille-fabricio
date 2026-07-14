@@ -7,153 +7,378 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Emille & Fabrício</title>
+<title>Emille & Fabricio | Casamento</title>
 
 <link rel="stylesheet" href="style.css">
 
-</head>
-.capa {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.fundo {
-  position: absolute;
-  inset: 0;
-  background-image: url("foto-capa.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.45;
-}
-
-.texto-capa {
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 20px;
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header>
-<h1>Emille Vitória & Fabrício Medeiros</h1>
-<h2>31 de Outubro 💙</h2>
 
-<p>
-Um cantinho preparado com muito carinho para nossos padrinhos.
-</p>
+<header>
+
+<nav>
+
+<div class="logo">
+Emille & Fabricio
+</div>
+
+<ul>
+
+<li><a href="#inicio">Início</a></li>
+
+<li><a href="#historia">Nossa História</a></li>
+
+<li><a href="#presentes">Lista de Presentes</a></li>
+
+<li><a href="#mensagem">Mensagem aos Padrinhos</a></li>
+
+</ul>
+
+</nav>
 
 </header>
 
 
-<section id="mensagem">
+<section class="hero" id="inicio">
 
-<div class="card">
+<div class="overlay"></div>
 
-<h2>💌 Aos nossos padrinhos</h2>
+<div class="hero-content">
 
-<p>
-Escolhemos vocês para caminhar conosco em um dos momentos mais importantes das nossas vidas.
+<h1>Emille & Fabricio</h1>
 
-Mais do que padrinhos, vocês são pessoas especiais que fazem parte da nossa história e da nossa família.
+<h2>31 de Outubro</h2>
 
-Obrigada por aceitarem esse convite e por estarem ao nosso lado nesse dia tão esperado. 🤍
+<p class="versiculo">
+
+"Assim, eles já não são dois, mas sim uma só carne.
+Portanto, o que Deus uniu, ninguém separe."
+
+<br><br>
+
+Mateus 19:6
+
 </p>
 
-</div>
 
-</section>
+<p class="boas-vindas">
 
+Preparamos este cantinho com muito carinho para vocês,
+que fazem parte da nossa história.
 
-<section>
+Obrigada por aceitarem caminhar conosco neste momento tão especial
+e por aceitarem ser nossos padrinhos.
 
-<h2>✨ Nosso cantinho</h2>
+Ter vocês ao nosso lado torna esse dia ainda mais especial.
 
-<a class="botao" href="#fotos">📸 Fotos</a>
-
-<a class="botao" href="#presentes">🎁 Presentes</a>
-
-<a class="botao" href="#casamento">💍 Casamento</a>
-
-</section>
-
-
-<section id="fotos">
-
-<div class="card">
-
-<h2>📸 Nossas fotos</h2>
-
-<p>
-Aqui vamos colocar nossas fotos favoritas 💙
 </p>
 
-<div>
-<img class="foto" src="foto1.jpg" alt="Emille e Fabrício">
-<img class="foto" src="foto2.jpg" alt="Emille e Fabrício">
-</div>
+
+<a href="#presentes" class="botao-principal">
+Ver Lista de Presentes
+</a>
+
 
 </div>
 
 </section>
+<section class="contador">
+
+<h2>Faltam</h2>
+
+<div id="contador"></div>
+
+<p>para o nosso grande dia 💙</p>
+
+</section>
 
 
-<section id="presentes">
 
-<div class="card">
+<section class="historia" id="historia">
 
-<h2>🎁 Lista de presentes</h2>
+<h2>Nossa História</h2>
+
+<div class="linha"></div>
 
 <p>
-Algumas opções para nossa nova fase:
+
+Aqui vocês poderão contar a história de vocês.
+
+Escreva como se conheceram, os momentos especiais,
+as conquistas, desafios e tudo que fez esse amor chegar até aqui.
+
+Esse texto pode ser editado depois.
+
 </p>
 
-<ul>
-<li>Máquina de lavar roupas</li>
-<li>Micro-ondas</li>
-<li>Sofá</li>
-<li>Mesa</li>
-<li>Armário de cozinha</li>
-<li>Filtro elétrico</li>
-<li>Air Fryer</li>
-<li>Tanquinho</li>
-<li>Forno</li>
-<li>Rack para TV</li>
-</ul>
+</section>
+
+
+
+<section class="presentes" id="presentes">
+
+<h2>Lista de Presentes</h2>
+
+<div class="linha"></div>
+
+
+<p class="texto-presentes">
+
+Essa lista foi criada apenas como uma forma de facilitar para quem deseja nos presentear.
+
+Mas queremos que saibam que o maior presente para nós é ter vocês fazendo parte da nossa vida e celebrando esse momento ao nosso lado.
+
+Caso não queira escolher nenhum item da lista, fique tranquilo(a), nós entendemos e receberemos seu carinho da mesma forma.
+
+</p>
+
+
+<div class="cards">
+
+
+
+<div class="card" id="presente0">
+
+<div class="icone">🎁</div>
+
+<h3>Máquina de Lavar Roupas</h3>
+
+<button class="btn-presente" onclick="escolherPresente(0)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+
+<div class="card" id="presente1">
+
+<div class="icone">🎁</div>
+
+<h3>Micro-ondas</h3>
+
+<button class="btn-presente" onclick="escolherPresente(1)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+
+<div class="card" id="presente2">
+
+<div class="icone">🎁</div>
+
+<h3>Sofá</h3>
+
+<button class="btn-presente" onclick="escolherPresente(2)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+
+<div class="card" id="presente3">
+
+<div class="icone">🎁</div>
+
+<h3>Mesa</h3>
+
+<button class="btn-presente" onclick="escolherPresente(3)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+
+<div class="card" id="presente4">
+
+<div class="icone">🎁</div>
+
+<h3>Armário de Cozinha</h3>
+
+<button class="btn-presente" onclick="escolherPresente(4)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+
+<div class="card" id="presente5">
+
+<div class="icone">🎁</div>
+
+<h3>Filtro Elétrico</h3>
+
+<button class="btn-presente" onclick="escolherPresente(5)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+  <div class="card" id="presente6">
+
+<div class="icone">🎁</div>
+
+<h3>Air Fryer</h3>
+
+<button class="btn-presente" onclick="escolherPresente(6)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+<div class="card" id="presente7">
+
+<div class="icone">🎁</div>
+
+<h3>Tanquinho</h3>
+
+<button class="btn-presente" onclick="escolherPresente(7)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+<div class="card" id="presente8">
+
+<div class="icone">🎁</div>
+
+<h3>Forno</h3>
+
+<button class="btn-presente" onclick="escolherPresente(8)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+<div class="card" id="presente9">
+
+<div class="icone">🎁</div>
+
+<h3>Rack para TV</h3>
+
+<button class="btn-presente" onclick="escolherPresente(9)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+<div class="card" id="presente10">
+
+<div class="icone">🎁</div>
+
+<h3>Novo Presente</h3>
+
+<button class="btn-presente" onclick="escolherPresente(10)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
+
+
+<div class="card" id="presente11">
+
+<div class="icone">🎁</div>
+
+<h3>Novo Presente</h3>
+
+<button class="btn-presente" onclick="escolherPresente(11)">
+Eu vou dar este presente
+</button>
+
+<span class="escolhido"></span>
+
+</div>
+
 
 </div>
 
 </section>
 
 
-<section id="casamento">
 
-<div class="card">
+<section class="mensagem" id="mensagem">
 
-<h2>💍 Nosso casamento</h2>
+<h2>Mensagem aos Padrinhos</h2>
+
+<div class="linha"></div>
+
 
 <p>
-Estamos preparando tudo com muito amor para viver esse dia inesquecível.
 
-Obrigada por fazerem parte da nossa história. 💙
+Deus colocou pessoas muito especiais em nossa caminhada.
+
+Vocês fazem parte da nossa história e ter vocês como padrinhos torna esse momento ainda mais importante.
+
+Obrigada por aceitarem caminhar conosco, celebrar nosso amor e fazer parte da construção da nossa família.
+
+Que Deus abençoe sempre a vida de vocês.
+
 </p>
 
-</div>
 
 </section>
+
 
 
 <footer>
-<p>Com carinho, Emille & Fabrício 🤍</p>
+
+<h2>Com muito amor,</h2>
+
+<h1>Emille & Fabricio ❤️</h1>
+
+<p>31 de Outubro</p>
+
 </footer>
 
 
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
