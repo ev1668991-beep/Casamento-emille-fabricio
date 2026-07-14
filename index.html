@@ -7,54 +7,29 @@
 <title>Emille & Fabrício</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f8f8f8;
-  color: #333;
-  text-align: center;
+.capa {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-header {
-  background: #003399;
+.fundo {
+  position: absolute;
+  inset: 0;
+  background-image: url("foto-capa.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.45;
+}
+
+.texto-capa {
+  position: relative;
+  z-index: 1;
   color: white;
-  padding: 60px 20px;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  color: #003399;
-}
-
-section {
-  padding: 40px 20px;
-}
-
-.card {
-  background: white;
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 25px;
-  border-radius: 15px;
-}
-
-.botao {
-  display: inline-block;
-  background: #003399;
-  color: white;
-  padding: 12px 25px;
-  margin: 8px;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
-.foto {
-  width: 90%;
-  max-width: 500px;
-  border-radius: 15px;
+  padding: 20px;
 }
 </style>
 
