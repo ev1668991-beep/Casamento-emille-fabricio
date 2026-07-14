@@ -63,29 +63,44 @@ nav ul li a:hover {
 /* ================= CAPA ================= */
 
 .hero {
-
     min-height: 100vh;
 
-   
-   background-image: url("capa.jpg.jpeg");
-
+    background-image: url("capa.jpg.jpeg");
     background-size: cover;
-
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     display: flex;
-
-    align-items: center;
-
     justify-content: center;
-
+    align-items: center;
     text-align: center;
 
     position: relative;
-
+    overflow: hidden;
 }
 
+.hero::before {
+    content: "";
 
+    position: absolute;
+    inset: 0;
+
+    background: rgba(8, 27, 78, 0.45);
+
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    color: white;
+
+    max-width: 900px;
+
+    padding: 20px;
+}
 .overlay {
 
     position: absolute;
