@@ -125,3 +125,5 @@ function copiarPix(id) {
         });
 
 }
+
+}
