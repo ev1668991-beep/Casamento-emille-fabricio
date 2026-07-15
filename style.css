@@ -632,11 +632,11 @@ footer p {
     .hero-content {
         padding: 20px;
         margin-top: 0px;
-        transform: translateY(50px);
+        transform: none;
     }
 
     .hero h1 {
-        font-size: 45px;
+        font-size: 38px;
         line-height: 1.1;
     }
 
