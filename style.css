@@ -125,8 +125,6 @@ nav ul li a:hover {
 
 }
 
-}
-
 
 .hero h1 {
 
@@ -550,7 +548,7 @@ footer p {
 .historia,
 .mensagem {
 
-    animation: aparecer 1s ease;
+    animation: none;
 
 }
 
@@ -616,30 +614,9 @@ footer p {
         font-size: 25px;
 
     }
-    /* AJUSTE PARA CELULAR */
-@media (max-width: 768px) {
 
-    .hero {
-        background-size: cover;
-        background-position: center top;
-        background-attachment: scroll;
-        min-height: 100svh;
-    }
 
-    .hero-content {
-        padding: 20px;
-        margin-top: 0;
-    }
-
-    .hero h1 {
-        font-size: 45px;
-        line-height: 1.1;
-    }
-
-    .hero h2 {
-        font-size: 25px;
-    }
-
+  
 }
 
     .versiculo {
