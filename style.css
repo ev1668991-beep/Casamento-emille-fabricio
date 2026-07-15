@@ -125,7 +125,6 @@ nav ul li a:hover {
 
 }
 
-
 .hero h1 {
 
     font-family: 'Cormorant Garamond', serif;
@@ -133,6 +132,12 @@ nav ul li a:hover {
     font-size: 80px;
 
     color: #f0d48a;
+
+    opacity: 1;
+
+    transform: none;
+
+    display: block;
 
 }
 
