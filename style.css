@@ -118,15 +118,14 @@ nav ul li a:hover {
 
 .hero-content {
 
+ .hero-content {
+
     position: relative;
-
     max-width: 850px;
-
     padding: 30px;
-
     color: white;
 
-    animation: none;
+}
 
 }
 
@@ -629,9 +628,9 @@ footer p {
         min-height: 100svh;
     }
 
-   .hero-content {
-    transform: none;
-}
+    .hero-content {
+        padding: 20px;
+        margin-top: 0;
     }
 
     .hero h1 {
@@ -642,8 +641,8 @@ footer p {
     .hero h2 {
         font-size: 25px;
     }
-}
 
+}
 
     .versiculo {
 
