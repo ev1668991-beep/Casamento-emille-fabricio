@@ -126,7 +126,7 @@ nav ul li a:hover {
 
     color: white;
 
-    animation: aparecer 2s ease;
+    animation: none;
 
 }
 
@@ -636,7 +636,7 @@ footer p {
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 45px;
         line-height: 1.1;
     }
 
