@@ -619,12 +619,13 @@ footer p {
         font-size: 25px;
 
     }
-    
-.hero {
+   
+    .hero {
     background-image: url("./capa.jpg.jpeg") !important;
-    background-size: cover;
-    background-position: center 40%;
-    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center 40% !important;
+    background-repeat: no-repeat !important;
+
 }
 
 
