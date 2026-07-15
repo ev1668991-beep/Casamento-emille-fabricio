@@ -629,10 +629,9 @@ footer p {
         min-height: 100svh;
     }
 
-    .hero-content {
-        padding: 20px;
-        margin-top: 0px;
-        transform: none;
+   .hero-content {
+    transform: none;
+}
     }
 
     .hero h1 {
