@@ -631,7 +631,8 @@ footer p {
 
     .hero-content {
         padding: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
+        transform: translateY(50px);
     }
 
     .hero h1 {
