@@ -620,16 +620,13 @@ footer p {
 
     }
     
-    .hero {
-    background-image: url("capa.jpg.jpeg");
+.hero {
+    background-image: url("./capa.jpg.jpeg") !important;
     background-size: cover;
     background-position: center 40%;
     background-repeat: no-repeat;
 }
 
-
-  
-}
 
     .versiculo {
 
